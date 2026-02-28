@@ -1,0 +1,67 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Chat session for organizing conversations
+model ChatSession {
+  id          String       @id @default(cuid())
+  sessionId   String       @unique
+  title       String?
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  messages    Message[]
+  moodRecords MoodRecord[]
+}
+
+// Individual messages in the chat
+model Message {
+  id        String     @id @default(cuid())
+  sessionId String
+  session   ChatSession @relation(fields: [sessionId], references: [sessionId])
+  role      String     // 'user' or 'assistant'
+  content   String
+  createdAt DateTime   @default(now())
+}
+
+// Mood tracking records
+model MoodRecord {
+  id        String      @id @default(cuid())
+  sessionId String
+  session   ChatSession @relation(fields: [sessionId], references: [sessionId])
+  mood      String      // detected mood: stress, anxiety, sadness, loneliness, positivity
+  level     String      // low, moderate, high distress
+  timestamp DateTime    @default(now())
+  notes     String?
+}
+
+// Coping techniques library
+model CopingTechnique {
+  id          String   @id @default(cuid())
+  name        String
+  category    String   // breathing, mindfulness, grounding, journaling, break
+  description String
+  instructions String
+  duration    Int?     // suggested duration in minutes
+  icon        String?
+  isActive    Boolean  @default(true)
+}
+
+// Wellbeing resources for students
+model Resource {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  type        String   // article, video, exercise, contact
+  url         String?
+  category    String   // stress, anxiety, depression, sleep, academic
+  isEmergency Boolean  @default(false)
+  isActive    Boolean  @default(true)
+}
