@@ -1,62 +1,92 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+🚀 Code Scaffold
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+Built by Aakarsh Tiwari
 
-## ✨ Technology Stack
+A modern, production-ready web application scaffold designed to accelerate full-stack development using a carefully curated set of industry-standard technologies and best practices.
 
-This scaffold provides a robust foundation built with:
+This scaffold provides a strong foundation for building scalable, maintainable, and high-performance web applications.
 
-### 🎯 Core Framework
-- **⚡ Next.js 16** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+✨ Technology Stack
 
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
+This project is built using modern, battle-tested tools widely adopted in professional production environments.
 
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
+🎯 Core Framework
 
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Fetch** - Promise-based HTTP request
+Next.js 16 – Production-grade React framework with App Router
 
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
+TypeScript 5 – Type-safe JavaScript for scalable applications
 
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
+Tailwind CSS 4 – Utility-first CSS framework for rapid UI development
 
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
+🧩 UI Components & Styling
 
-## 🎯 Why This Scaffold?
+shadcn/ui – Accessible, composable UI components
 
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
+Radix UI – Low-level UI primitives for accessibility
 
-## 🚀 Quick Start
+Lucide React – Clean and consistent icon library
 
-```bash
+Framer Motion – Smooth animations and micro-interactions
+
+Next Themes – Built-in dark and light mode support
+
+📋 Forms & Validation
+
+React Hook Form – Performant and flexible form handling
+
+Zod – Type-safe schema validation integrated with TypeScript
+
+🔄 State Management & Data Fetching
+
+Zustand – Lightweight and scalable global state management
+
+TanStack Query – Server-state management and data synchronization
+
+Fetch API – Promise-based HTTP requests
+
+🗄️ Database & Backend
+
+Prisma – Next-generation ORM with full TypeScript support
+
+NextAuth.js – Secure authentication and session management
+
+🎨 Advanced UI Features
+
+TanStack Table – Headless tables with sorting, filtering, pagination
+
+DND Kit – Modern drag-and-drop functionality
+
+Recharts – Data visualization using React and D3
+
+Sharp – High-performance image processing and optimization
+
+🌍 Internationalization & Utilities
+
+Next Intl – Internationalization support for Next.js
+
+Date-fns – Lightweight and modern date utility library
+
+ReactUse – Collection of reusable React hooks
+
+🎯 Why This Scaffold?
+
+Fast Development – Preconfigured tooling and conventions
+
+Clean Architecture – Structured and maintainable codebase
+
+Type Safety – End-to-end TypeScript integration
+
+Responsive UI – Mobile-first design approach
+
+Authentication Ready – Secure login and session handling
+
+Database Ready – Prisma ORM for rapid backend development
+
+Scalable State Management – Suitable for small to large applications
+
+Production Optimized – Ready for deployment without extra setup
+
+🚀 Quick Start
 # Install dependencies
 bun install
 
@@ -68,74 +98,58 @@ bun run build
 
 # Start production server
 bun start
-```
 
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
+Open http://localhost:3000
+ to view the application.
 
-## 🤖 Powered by Z.ai
-
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
-
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
-
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
-
-## 📁 Project Structure
-
-```
+📁 Project Structure
 src/
 ├── app/                 # Next.js App Router pages
 ├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
-```
+│   └── ui/              # shadcn/ui components
+├── hooks/               # Custom React hooks
+└── lib/                 # Utilities and configurations
+🎨 Available Features & Components
+🧩 UI Components
 
-## 🎨 Available Features & Components
+Layout: Card, Separator, Aspect Ratio, Resizable Panels
 
-This scaffold includes a comprehensive set of modern web development tools:
+Forms: Input, Textarea, Select, Checkbox, Radio Group, Switch
 
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
+Feedback: Alert, Toast, Progress, Skeleton
 
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
+Navigation: Breadcrumb, Menubar, Pagination, Navigation Menu
 
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
+Overlay: Dialog, Sheet, Popover, Tooltip, Hover Card
 
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Fetch + TanStack Query
-- **State Management**: Simple and scalable with Zustand
+Data Display: Badge, Avatar, Calendar
 
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
+📊 Data & Interaction Features
 
-## 🤝 Get Started with Z.ai
+Advanced tables with filtering and pagination
 
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+Responsive charts and data visualization
 
----
+Type-safe forms with validation
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+Drag-and-drop interactions
+
+Theme switching (dark / light mode)
+
+🚀 Production Readiness
+
+Optimized build configuration
+
+Image optimization and caching
+
+Secure authentication flows
+
+Internationalization support
+
+Scalable architecture suitable for real-world applications
+
+👤 Author
+
+Aakarsh Tiwari
+Computer Science & Engineering Student
+Focused on building clean, scalable, and production-ready web applications.
